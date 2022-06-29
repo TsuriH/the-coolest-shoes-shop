@@ -1,0 +1,14 @@
+.RandomBrand button {
+	margin-top: 50px;
+}
+
+.RandomBrand  {
+	display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.RandomBrand span  {
+    font-size: 1em;
+    background-color: rgb(189, 77, 77);
+}

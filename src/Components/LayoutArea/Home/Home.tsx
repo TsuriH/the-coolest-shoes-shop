@@ -2,6 +2,7 @@ import ShoesCard from "../../ShoesCard/ShoesCard";
 import "./Home.css";
 import Youtube from "./Youtube/Youtube";
 import ShoesCardsList from "../../../Components/ShoesCardsList"
+import RandomBrand from "../../RandomBrand/RandomBrand";
 
 function isTheFirstDayOfTheMonth(){
     const time = new Date()
@@ -20,6 +21,9 @@ function Home(): JSX.Element {
 			<Youtube />
             <div className="Shoes-Container">
                 {allShoesCards}
+            </div>
+            <div className="randomBrand">
+                <RandomBrand />
             </div>
             
         </div>
