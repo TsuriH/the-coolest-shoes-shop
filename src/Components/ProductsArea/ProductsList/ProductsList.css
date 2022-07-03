@@ -1,0 +1,13 @@
+.ProductsList {
+	display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+    width: 400px;
+}
+
+.ProductsList > * {
+    max-height: 100%;
+    max-width: 100%;
+}

@@ -33,7 +33,5 @@ function Home(): JSX.Element {
 export default Home;
 
 
-//Q: 1. why not putting the iframe inside the home instead of building special component for Youtube
-     //2. how come home css recognize iframe of youtube while it doesn't have directly iframe inside home component 
-     // Do i have to use interface all the time even when i have one prop to convey
-     // i put the paragraph that show a message if its the 1 of the month in the youtube component, is that good or should i put it inside home?
+
+  
