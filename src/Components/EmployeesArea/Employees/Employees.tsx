@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import EmployeeModel from "../../../Models/EmployeeModel";
 import EmployeesService from "../../../Services/EmployeesService";
+import EmployeeCard from "../EmployeeCard/EmployeeCard";
 import "./Employees.css";
 
 function Employees(): JSX.Element {
@@ -17,18 +19,8 @@ function Employees(): JSX.Element {
 
     return (
         <div className="Employees">
-           
-            {employees.map(e =>{
-                 return <ul>
-                            <li><span>Id:</span>  {e.id}</li>
-                            <li> <span>firstName:</span> {e.firstName}  </li>
-                            <li><span>lastName:</span>  {e.lastName} </li>
-                            <li><span>title:</span>  {e.title}</li>
-                            <li><span>city: </span> {e.city}  </li>
-                            <li><span>birthDate:</span>  {e.birthDate} </li>
-                            <li><span>imageName:</span>  {e.imageName} </li>
-                       </ul>
-                 })}
+            <NavLink to="/employee/new">➕</NavLink>
+            {employees.map(e => <EmployeeCard key={e.id} employee={e}/>   )}
            
 			
         </div>

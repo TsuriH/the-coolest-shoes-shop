@@ -7,6 +7,7 @@ class EmployeeModel {
     public city?: string;
     public birthDate?: number;
     public imageName?: string;
+    public image?: FileList;
 
 
 

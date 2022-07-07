@@ -1,0 +1,31 @@
+
+
+.addEmployee form{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:  100px 200px;
+    gap: 10px;
+    width: 500px; 
+}
+
+.addEmployee .buttonHolder{
+ grid-column: span 2;
+ margin-top: 20px;
+
+}
+
+.addEmployee button {
+    padding: 10px 35px;
+    color:white;
+    background-color: rgb(158, 158, 216);
+    border-radius: 9px;
+}
+
+.addEmployee button:hover {
+
+    background-color: rgb(93, 93, 182);
+
+}
+
+

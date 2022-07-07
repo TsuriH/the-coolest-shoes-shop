@@ -1,0 +1,27 @@
+.EmployeeCard {
+	
+}
+
+.Box {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+}
+
+.EmployeeCard .info{
+ 
+    width: 250px;
+    display: grid;
+    grid-template-rows: repeat(5, 32px);
+    grid-template-columns: repeat(2, auto);
+    text-align: left;
+    
+}
+ 
+.EmployeeCard .info-wrapper {
+    display: flex;
+    align-items: center;
+}
