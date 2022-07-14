@@ -1,0 +1,42 @@
+
+.EditEmployee .formWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.EditEmployee form{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:  100px 200px auto;
+    gap: 10px;
+    width: 500px; 
+}
+
+.EditEmployee .buttonHolder{
+ grid-column: span 2;
+ margin-top: 20px;
+
+}
+
+.EditEmployee button {
+    padding: 10px 35px;
+    color:white;
+    background-color: rgb(158, 158, 216);
+    border-radius: 9px;
+}
+
+.EditEmployee button:hover {
+
+    background-color: rgb(93, 93, 182);
+
+}
+
+.EditEmployee span {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    
+
+}
+
