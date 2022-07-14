@@ -1,10 +1,9 @@
 
-
 .addEmployee form{
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns:  100px 200px;
+    grid-template-columns:  100px 200px auto;
     gap: 10px;
     width: 500px; 
 }
@@ -28,4 +27,11 @@
 
 }
 
+.addEmployee span {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    
+
+}
 

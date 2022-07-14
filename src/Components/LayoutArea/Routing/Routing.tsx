@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import About from "../../AboutArea/About/About";
 import AddEmployee from "../../EmployeesArea/addEmployee/addEmployee";
+import EditEmployee from "../../EmployeesArea/EditEmployee/EditEmployee";
 import EmployeeDetails from "../../EmployeesArea/EmployeeDetails/EmployeeDetails";
 import Employees from "../../EmployeesArea/Employees/Employees";
 import ProductsList from "../../ProductsArea/ProductsList/ProductsList";
@@ -30,6 +31,8 @@ function Routing(): JSX.Element {
             <Route path="*" element={<PageNotFound />}/>
 
             <Route path="/employees/details/:prodId" element={<EmployeeDetails />} />
+
+            <Route path="/employees/edit/:prodId" element={<EditEmployee />}/>
 
             <Route path="/employee/new" element={<AddEmployee />} />
 
