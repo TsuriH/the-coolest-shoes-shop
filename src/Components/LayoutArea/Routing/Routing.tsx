@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import About from "../../AboutArea/About/About";
+import Register from "../../AuthArea/Register/Register";
 import AddEmployee from "../../EmployeesArea/addEmployee/addEmployee";
 import EditEmployee from "../../EmployeesArea/EditEmployee/EditEmployee";
 import EmployeeDetails from "../../EmployeesArea/EmployeeDetails/EmployeeDetails";
@@ -15,6 +16,8 @@ function Routing(): JSX.Element {
         <div className="Routing">
             
         <Routes>
+
+            <Route path="/register" element={<Register />} />
 
             <Route path="/home" element={<Home />}/>
 
@@ -35,6 +38,7 @@ function Routing(): JSX.Element {
             <Route path="/employees/edit/:prodId" element={<EditEmployee />}/>
 
             <Route path="/employee/new" element={<AddEmployee />} />
+
 
 
         </Routes>
